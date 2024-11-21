@@ -27,7 +27,7 @@ RUN npm install && ng build --prod
 # Copia los archivos estáticos generados por Angular a la carpeta de Apache
 RUN cp -r /usr/src/app/dist/* /var/www/html/
 
-# Expon el puerto 80
+#puerto 80
 EXPOSE 80
 
 # Inicia Apache en el contenedor
